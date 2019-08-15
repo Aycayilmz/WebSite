@@ -14,9 +14,19 @@ namespace WebSite
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
                 name: "About",
-                url: "hakkimizda",
+                url: "Hakkimizda",
                 defaults: new { controller = "About", action = "Index"}
             );
+            routes.MapRoute(
+                name: "Blog",
+                url: "Blog",
+                defaults: new { controller = "Blog", action = "Index" }
+            );
+            routes.MapRoute(
+             name: "Contact",
+             url: "Contact",
+             defaults: new { controller = "Contact", action = "Index" }
+         );
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

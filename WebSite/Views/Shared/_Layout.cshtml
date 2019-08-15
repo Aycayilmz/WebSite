@@ -29,7 +29,7 @@
                         <li><i class="flaticon-telephone"></i>Phone +123-456-7890</li>
                         <li><i class="flaticon-envelope"></i>Yourcompany@gmail.com</li>
                     </ul>
-                    <ul class="social-style-one float_right">
+                    <ul class="social-style-one float_right hidden-xs">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -94,12 +94,12 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
+                                        <a href="@Url.Action("Index","Blog")">Blog</a>
+                                        @*<ul>
                                             <li><a href="blog-grid.html">News Grid</a></li>
                                             <li><a href="blog-large.html">News Classic</a></li>
                                             <li><a href="blog-details.html">News Details</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
 
                                     @*<li><a href="contact.html">İletişim</a></li>*@
@@ -108,11 +108,11 @@
                                 <ul class="mobile-menu clearfix">
 
                                     <li class="dropdown">
-                                        <a href="index.html">AnaSayfa</a>                                       
+                                        <a href="@Url.Action("","")">AnaSayfa</a>                                       
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="#">Hakkımızda</a>
+                                        <a href="@Url.Action("Index","Hakkimizda")">Hakkımızda</a>
                                         <ul>
                                             <li><a href="about.html">Biz Kimiz</a></li>
                                             <li><a href="team.html">Team</a></li>
@@ -122,7 +122,7 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="#">Projects</a>
+                                        <a href="@Url.Action("Index","Projeler")">Projects</a>
                                         <ul>
                                             <li><a href="our-projects.html">Projeler</a></li>
                                             <li><a href="project-single.html">Project Details</a></li>
@@ -130,7 +130,7 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="#">services</a>
+                                        <a href="@Url.Action("Index","Servisler")">services</a>
                                         <ul>
                                             <li><a href="service.html">Servisler</a></li>
                                             <li><a href="service-single.html">Service Details</a></li>
@@ -138,12 +138,12 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
+                                        <a href="@Url.Action("Index","Blog")">Blog</a>
+                                        @*<ul>
                                             <li><a href="blog-grid.html">News Grid</a></li>
                                             <li><a href="blog-large.html">News Classic</a></li>
                                             <li><a href="blog-details.html">News Details</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
 
                                     @*<li><a href="contact.html">İletişim</a></li>*@
@@ -156,7 +156,7 @@
                         <div class="right-column">
                             <div class="right-area">
                                 <div class="link-btn4 float_right">
-                                    <a href="#" class="btn-style-one">İLETİŞİM</a>
+                                    <a href="@Url.Action("Index","Contact")" class="btn-style-one">İLETİŞİM</a>
                                 </div>
                             </div>
                         </div>
